@@ -36,7 +36,6 @@ Fine-tune the model on datasets with real attack labels. The script includes a b
 PROCESSED_DATA_B = "/path/to/finetune/pt"
 PRETRAINED_PATH = "pretrained_encoder.pth" 
 SAVE_FINE_TUNED = "finetuned_model.pth"
-Modify hyperparameters such as LABEL_RATIO and EPOCHS as needed.
 ```
 ## E-mail
 If you have any question, please feel free to contact us by e-mail (jiangtaozhai@nuist.edu.cn).
