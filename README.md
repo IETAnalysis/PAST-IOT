@@ -5,11 +5,11 @@ We understand that validating the model architecture and training process is cru
 
 * feature_ext.py: PCAP parsing and multi-processing feature extraction; generates .pt datasets.
 
-* model.py: Core network architecture (RevIN, Dual-tower backbone, Multi-scale CNN, Multi-task output heads).
+* model.py: Core network architecture.
 
-* pretrain.py: Self-supervised pre-training script (Contrastive loss, Reconstruction loss, Masked phase prediction).
+* pretrain.py: Self-supervised pre-training script.
 
-* fintest.py: Downstream fine-tuning and evaluation script (Supports dynamic sampling, early stopping, and confusion matrix output).
+* fintest.py: Downstream fine-tuning and evaluation script.
 
 
 
@@ -22,7 +22,7 @@ pip install torch torchvision numpy pandas scikit-learn scapy tqdm
 ```
 
 ## Data Preparation & Feature Extraction
-The pre-training phase utilizes normal traffic data injected with physical anomalies to perform multi-task learning (Contrastive Learning + Masked Recovery + Reconstruction).
+The pre-training phase utilizes normal traffic data injected with physical anomalies to perform multi-task learning.
 ```python
 RAW_P = "/path/to/pretrain/pcap" # Raw data for pre-training
 OUT_P = "/path/to/pretrain/pt"   # Feature output for pre-training
