@@ -1,19 +1,17 @@
 # PAST-IOT
 ## PAST-IoT: Self-Supervised IoT Intrusion Detection via Pattern-Aware Anomaly Injection and Spectral-Temporal Dual-Tower Decomposition
 
-We understand that validating the model architecture and training process is crucial for peer review.
-Therefore, we provide:
+We understand that validating the model architecture and training process is crucial for peer review. Therefore, we provide:
 
-Project Structure
-feature_ext.py: PCAP parsing and multi-processing feature extraction; generates .pt datasets.
+* feature_ext.py: PCAP parsing and multi-processing feature extraction; generates .pt datasets.
 
-model.py: Core network architecture (RevIN, Dual-tower backbone, Multi-scale CNN, Multi-task output heads).
+* model.py: Core network architecture (RevIN, Dual-tower backbone, Multi-scale CNN, Multi-task output heads).
 
-pretrain.py: Self-supervised pre-training script (Contrastive loss, Reconstruction loss, Masked phase prediction).
+* pretrain.py: Self-supervised pre-training script (Contrastive loss, Reconstruction loss, Masked phase prediction).
 
-fintest.py: Downstream fine-tuning and evaluation script (Supports dynamic sampling, early stopping, and confusion matrix output).
+* fintest.py: Downstream fine-tuning and evaluation script (Supports dynamic sampling, early stopping, and confusion matrix output).
 
-README.md: Project documentation.
+
 
 
 
